@@ -1,9 +1,13 @@
 const path = require("path");
-const withTypeScript = require("@zeit/next-typescript");
+const withTypescript = require("@zeit/next-typescript");
 const withCustomBabelConfigFile = require("next-plugin-custom-babel-config");
+const withTranspileModules = require("next-plugin-transpile-modules");
 
 module.exports = withCustomBabelConfigFile(
-  withTypeScript({
-    babelConfigFile: path.resolve("../babel.config.js")
-  })
+  withTranspileModules(
+    withTypescript({
+      babelConfigFile: path.resolve("../babel.config.js"),
+      transpileModules: ["@invoi"]
+    })
+  )
 );

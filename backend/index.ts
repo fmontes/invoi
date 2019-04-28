@@ -1,14 +1,10 @@
 import * as express from "express";
-
-export namespace Models {
-  export interface Mock {
-    id: string;
-    title: string;
-  }
-}
+import { Models } from "./api/models";
 
 function randomData(): Models.Mock {
-  const id = new Date().getTime().toString();
+  const id = Math.random()
+    .toString(36)
+    .substr(2);
   return {
     id,
     title: `Hello World ${id}`,
