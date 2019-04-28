@@ -1,0 +1,9 @@
+{
+  "name": "invoi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Freddy Montes @fmontes",
+  "private": true,
+  "workspaces": ["frontend"]
+}
