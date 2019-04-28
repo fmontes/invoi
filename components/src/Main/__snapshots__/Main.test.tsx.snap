@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render 1`] = `
+<styled.main>
+  <h2>
+    Hello World
+  </h2>
+</styled.main>
+`;
