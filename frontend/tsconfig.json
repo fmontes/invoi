@@ -1,8 +1,7 @@
 {
     "extends": "../tsconfig.json",
     "compilerOptions": {
-      "jsx": "preserve",
-      "lib": ["dom", "es2017"]
+        "jsx": "preserve",
+        "lib": ["dom", "es2017"]
     }
-  }
-  
+}

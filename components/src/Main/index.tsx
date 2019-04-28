@@ -6,9 +6,5 @@ const Main = styled.main`
 `;
 
 export function Layout({ children }: { children: React.ReactNode }): JSX.Element {
-    return (
-        <Main>
-            {children}
-        </Main>
-    );
+    return <Main>{children}</Main>;
 }

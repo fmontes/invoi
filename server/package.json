@@ -1,19 +1,17 @@
 {
-  "name": "@invoi/server",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Freddy Montes @fmontes",
-  "license": "MIT",
-  "scripts": {
-    "start": "ts-node ./index.ts"
-  },
-  "dependencies": {
-    "@invoi/api": "*",
-    "@types/express": "^4.16.1",
-    "@types/faker": "^4.1.5",
-    "axios": "^0.18.0",
-    "express": "^4.16.4",
-    "ts-node": "^8.1.0",
-    "typescript": "^3.4.5"
-  }
+    "name": "@invoi/server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Freddy Montes @fmontes",
+    "license": "MIT",
+    "scripts": {
+        "start": "ts-node ./index.ts"
+    },
+    "dependencies": {
+        "@invoi/api": "*",
+        "@types/express": "^4.16.1",
+        "express": "^4.16.4",
+        "ts-node": "^8.1.0",
+        "typescript": "^3.4.5"
+    }
 }

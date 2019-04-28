@@ -1,7 +1,6 @@
 export namespace Models {
     export interface Mock {
-      id: string;
-      title: string;
+        id: string;
+        title: string;
     }
-  }
-  
+}

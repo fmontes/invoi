@@ -1,7 +1,10 @@
 {
-  "name": "@invoi/api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Freddy Montes @fmontes",
-  "license": "MIT"
+    "name": "@invoi/api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Freddy Montes @fmontes",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.18.0"
+    }
 }
