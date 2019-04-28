@@ -3,6 +3,7 @@ import { NextStatelessComponent } from "next";
 import Link from "next/link";
 import { Models } from "@invoi/api/models";
 import { apiClient } from "@invoi/api";
+import { Layout } from "@invoi/components";
 
 interface Props {
   posts: Models.Mock[];
@@ -10,7 +11,7 @@ interface Props {
 
 const Home: NextStatelessComponent<Props> = ({ posts: data }) => {
   return (
-    <div>
+    <Layout>
       <h1>Home</h1>
       <ul>
         {data.map(item => (
@@ -21,7 +22,7 @@ const Home: NextStatelessComponent<Props> = ({ posts: data }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 };
 

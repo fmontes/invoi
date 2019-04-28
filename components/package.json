@@ -1,0 +1,16 @@
+{
+  "name": "@invoi/components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Freddy Montes @fmontes",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.14",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "typescript": "^3.4.5"
+  }
+}

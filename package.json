@@ -5,5 +5,6 @@
   "license": "MIT",
   "author": "Freddy Montes @fmontes",
   "private": true,
-  "workspaces": ["frontend", "server", "api"]
+  "workspaces": ["frontend", "server", "api", "components"],
+  "postinstall": "sed -i 's/followSymlinks: false/followSymlinks: true/g' node_modules/watchpack/lib/DirectoryWatcher.js"
 }
