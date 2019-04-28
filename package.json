@@ -5,5 +5,5 @@
   "license": "MIT",
   "author": "Freddy Montes @fmontes",
   "private": true,
-  "workspaces": ["frontend", "backend", "api"]
+  "workspaces": ["frontend", "server", "api"]
 }
