@@ -5,6 +5,11 @@
     "license": "MIT",
     "author": "Freddy Montes @fmontes",
     "private": true,
+    "scripts": {
+        "server": "cd server;yarn start",
+        "frontend": "cd frontend;yarn dev",
+        "storybook": "cd components;yarn storybook"
+    },
     "workspaces": [
         "frontend",
         "server",
