@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Freddy Montes @fmontes",
   "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook"
+  },
   "dependencies": {
     "@types/react": "^16.8.14",
     "@types/react-dom": "^16.8.4",
@@ -12,5 +15,13 @@
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0",
     "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "@storybook/react": "^5.0.11",
+    "@types/jest": "^24.0.11",
+    "@types/storybook__react": "^4.0.1",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2"
   }
 }
