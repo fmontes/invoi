@@ -1,5 +1,5 @@
 import * as express from "express";
-import { Models } from "./api/models";
+import { Models } from "@invoi/api/models";
 
 function randomData(): Models.Mock {
   const id = Math.random()

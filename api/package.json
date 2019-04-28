@@ -1,0 +1,7 @@
+{
+  "name": "@invoi/api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Freddy Montes @fmontes",
+  "license": "MIT"
+}

@@ -9,7 +9,7 @@
     "build": "next build"
   },
   "dependencies": {
-    "@invoi/backend": "*",
+    "@invoi/api": "*",
     "@types/next": "^7.0.5",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",

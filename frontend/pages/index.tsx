@@ -1,8 +1,8 @@
 import * as React from "react";
 import { NextStatelessComponent } from "next";
 import Link from "next/link";
-import { Models } from "@invoi/backend/api/models";
-import { apiClient } from "@invoi/backend/api";
+import { Models } from "@invoi/api/models";
+import { apiClient } from "@invoi/api";
 
 interface Props {
   posts: Models.Mock[];
