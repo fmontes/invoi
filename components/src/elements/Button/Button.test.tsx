@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button } from './';
+import { Button } from './index';
 import { shallow } from 'enzyme';
 
 test('Button should render', () => {
