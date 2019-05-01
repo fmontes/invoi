@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should render 1`] = `
-<styled.button
+exports[`TextField should render 1`] = `
+<styled.input
   theme={
     Object {
       "base": Object {
@@ -51,7 +51,6 @@ exports[`Button should render 1`] = `
       },
     }
   }
->
-  Hello World
-</styled.button>
+  type="number"
+/>
 `;

@@ -17,6 +17,7 @@ const theme = {
         gray,
         primary,
         secondary: '#F0A78B',
+        neutral: '#CBC1BB',
         success: primary,
         textBody: black,
         textSub: gray,
