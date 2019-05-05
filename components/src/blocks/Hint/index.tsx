@@ -10,7 +10,7 @@ interface HintProps {
 };
 
 const HintStyled = styled.span<HintProps>`
-    color: ${({ theme, disabled, error }: HintProps) => disabled ? theme.colors.disabled : error ? theme.colors.error : ''};
+    color: ${({ theme, disabled, error }: HintProps) => disabled ? theme.colors.disabled : error ? theme.colors.error : theme.colors.gray};
     font-family: ${({ theme }: HintProps) => theme.font.family};
     font-size: ${({ theme }: HintProps) => theme.font.size.tiny};
 `;

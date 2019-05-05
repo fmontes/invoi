@@ -57,12 +57,5 @@ const theme: ThemeModel = {
     }
 };
 
-export const rgba = (color: string, opacity: string): string => {
-    return `rgba(${hexToRgbA(theme.colors[color])}, ${opacity})`;
-};
-
-export const transition = (props: string[]): string =>
-    props.map((props: string) => `${props} ${theme.animation.speed} ease`).join(', ');
-
 export default theme;
 export * from './theme.model';
