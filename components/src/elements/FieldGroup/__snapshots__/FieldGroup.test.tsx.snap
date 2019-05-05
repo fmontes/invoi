@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField should render 1`] = `
-<styled.input
+exports[`FieldGroup should render 1`] = `
+<styled.div
+  disabled={false}
   error={false}
+  id="email"
+  label="Hello World"
   theme={
     Object {
       "animation": Object {
@@ -56,14 +59,28 @@ exports[`TextField should render 1`] = `
       },
     }
   }
-  type="number"
-/>
+>
+  <Label
+    className="label"
+    id="email"
+    label="Hello World"
+  >
+    Hello World
+  </Label>
+  <TextField
+    id="email"
+    type="email"
+  />
+</styled.div>
 `;
 
-exports[`TextField should render disaled 1`] = `
-<styled.input
-  disabled={true}
+exports[`FieldGroup should render with hint 1`] = `
+<styled.div
+  disabled={false}
   error={false}
+  hint="Hello Im the hint"
+  id="email"
+  label="Hello World"
   theme={
     Object {
       "animation": Object {
@@ -117,66 +134,26 @@ exports[`TextField should render disaled 1`] = `
       },
     }
   }
-  type="number"
-/>
-`;
-
-exports[`TextField should render error 1`] = `
-<styled.input
-  error={true}
-  theme={
-    Object {
-      "animation": Object {
-        "speed": "100ms",
-      },
-      "base": Object {
-        "radius": Object {
-          "normal": "0.5rem",
-          "tiny": "0.25rem",
-        },
-      },
-      "colors": Object {
-        "background": "#FDFCF9",
-        "black": "#202641",
-        "disabled": "#D7D0CB",
-        "error": "#832400",
-        "gray": "#5B6078",
-        "neutral": "#CBC1BB",
-        "primary": "#3951C5",
-        "secondary": "#F0A78B",
-        "success": "#3951C5",
-        "textBody": "#202641",
-        "textSub": "#5B6078",
-        "white": "#fff",
-      },
-      "components": Object {
-        "buttons": Object {
-          "normal": Object {
-            "height": "2.75rem",
-          },
-          "tiny": Object {
-            "height": "1.5rem",
-          },
-        },
-      },
-      "font": Object {
-        "family": "'Work Sans', sans-serif;",
-        "size": Object {
-          "body": "1rem",
-          "h1": "2rem",
-          "h2": "1.5rem",
-          "hint": "0.8125rem",
-          "tiny": "0.6875rem",
-        },
-      },
-      "spaces": Object {
-        "half": "0.25rem",
-        "one": "0.5rem",
-        "three": "2rem",
-        "two": "1rem",
-      },
-    }
-  }
-  type="number"
-/>
+>
+  <Label
+    className="label"
+    hint="Hello Im the hint"
+    id="email"
+    label="Hello World"
+  >
+    Hello World
+  </Label>
+  <TextField
+    id="email"
+    type="email"
+  />
+  <Hint
+    className="hint"
+    hint="Hello Im the hint"
+    id="email"
+    label="Hello World"
+  >
+    Hello Im the hint
+  </Hint>
+</styled.div>
 `;

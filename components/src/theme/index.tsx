@@ -1,8 +1,14 @@
+import { ThemeModel } from "./theme.model";
+import { hexToRgbA } from './utils';
+
 const primary = '#3951C5';
 const black = '#202641';
 const gray = '#5B6078';
 
-const theme = {
+const theme: ThemeModel = {
+    animation: {
+        speed: '100ms'
+    },
     base: {
         radius: {
             normal: '0.5rem',
@@ -34,6 +40,7 @@ const theme = {
         }
     },
     spaces: {
+        half: '0.25rem',
         one: '0.5rem',
         two: '1rem',
         three: '2rem'
@@ -50,4 +57,12 @@ const theme = {
     }
 };
 
+export const rgba = (color: string, opacity: string): string => {
+    return `rgba(${hexToRgbA(theme.colors[color])}, ${opacity})`;
+};
+
+export const transition = (props: string[]): string =>
+    props.map((props: string) => `${props} ${theme.animation.speed} ease`).join(', ');
+
 export default theme;
+export * from './theme.model';

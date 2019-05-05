@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField should render 1`] = `
-<styled.input
+exports[`Hint should render 1`] = `
+<styled.span
+  disabled={false}
   error={false}
   theme={
     Object {
@@ -56,12 +57,13 @@ exports[`TextField should render 1`] = `
       },
     }
   }
-  type="number"
-/>
+>
+  Hello World
+</styled.span>
 `;
 
-exports[`TextField should render disaled 1`] = `
-<styled.input
+exports[`Hint should render disabled 1`] = `
+<styled.span
   disabled={true}
   error={false}
   theme={
@@ -117,12 +119,14 @@ exports[`TextField should render disaled 1`] = `
       },
     }
   }
-  type="number"
-/>
+>
+  Hello World
+</styled.span>
 `;
 
-exports[`TextField should render error 1`] = `
-<styled.input
+exports[`Hint should render error 1`] = `
+<styled.span
+  disabled={false}
   error={true}
   theme={
     Object {
@@ -177,6 +181,7 @@ exports[`TextField should render error 1`] = `
       },
     }
   }
-  type="number"
-/>
+>
+  Hello World
+</styled.span>
 `;

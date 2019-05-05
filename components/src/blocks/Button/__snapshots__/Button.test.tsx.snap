@@ -4,6 +4,9 @@ exports[`Button should render 1`] = `
 <styled.button
   theme={
     Object {
+      "animation": Object {
+        "speed": "100ms",
+      },
       "base": Object {
         "radius": Object {
           "normal": "0.5rem",
@@ -45,6 +48,7 @@ exports[`Button should render 1`] = `
         },
       },
       "spaces": Object {
+        "half": "0.25rem",
         "one": "0.5rem",
         "three": "2rem",
         "two": "1rem",

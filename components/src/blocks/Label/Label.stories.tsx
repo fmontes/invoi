@@ -1,6 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Label } from './index';
+import Label from './index';
 
-storiesOf('Label Normal', module)
+storiesOf('Blocks/Label/Regular', module)
     .add('normal', () => <Label>Hello World</Label>)
+    .add('disabled', () => <Label disabled>Hello World</Label>)
+    .add('error', () => <Label error>Hello World</Label>);

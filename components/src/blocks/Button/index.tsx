@@ -1,29 +1,31 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import theme from '../../theme';
+import theme, { ThemeModel } from '../../theme';
 
-type ButtonProps  = {
+type ButtonProps = {
     naked?: boolean;
     disabled?: boolean;
     secondary?: boolean;
     tiny?: boolean;
-    theme?: any;
-    children: React.ReactNode
+    theme: ThemeModel;
+    children: React.ReactNode;
 };
 
 const ButtonStyled = styled.button<ButtonProps>`
-    background-color: ${({ theme, secondary, naked }) =>
+    background-color: ${({ theme, secondary, naked }: ButtonProps) =>
         naked ? 'transparent' : secondary ? theme.colors.gray : theme.colors.primary};
-    border-radius: ${({ theme, tiny }) => theme.base.radius[tiny ? 'tiny' : 'normal']};
+    border-radius: ${({ theme, tiny }: ButtonProps) => theme.base.radius[tiny ? 'tiny' : 'normal']};
     border: 0;
-    color: ${({ theme, naked }) => (naked ? theme.colors.textBody : theme.colors.white)};
-    font-family: ${({ theme }) => theme.font.family};
-    font-size: ${({ theme, tiny }) => theme.font.size[tiny ? 'tiny' : 'body']};
-    height: ${({ theme, tiny }) => theme.components.buttons[tiny ? 'tiny' : 'normal'].height};
-    padding: 0 ${({ theme, tiny }) => theme.spaces[tiny ? 'one' : 'two']};
-    text-transform: ${({ tiny }) => (tiny ? 'uppercase' : 'normal')};
+    color: ${({ theme, naked }: ButtonProps) =>
+        naked ? theme.colors.textBody : theme.colors.white};
+    font-family: ${({ theme }: ButtonProps) => theme.font.family};
+    font-size: ${({ theme, tiny }: ButtonProps) => theme.font.size[tiny ? 'tiny' : 'body']};
+    height: ${({ theme, tiny }: ButtonProps) =>
+        theme.components.buttons[tiny ? 'tiny' : 'normal'].height};
+    padding: 0 ${({ theme, tiny }: ButtonProps) => theme.spaces[tiny ? 'one' : 'two']};
+    text-transform: ${({ tiny }: ButtonProps) => (tiny ? 'uppercase' : 'normal')};
     &:disabled {
-        background-color: ${({ theme }) => theme.colors.disabled};
+        background-color: ${({ theme }: ButtonProps) => theme.colors.disabled};
     }
 `;
 
