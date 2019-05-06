@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select should render 1`] = `
+<styled.div
+  error={false}
+  theme={
+    Object {
+      "animation": Object {
+        "speed": "100ms",
+      },
+      "base": Object {
+        "radius": Object {
+          "normal": "0.5rem",
+          "tiny": "0.25rem",
+        },
+      },
+      "colors": Object {
+        "background": "#FDFCF9",
+        "black": "#202641",
+        "disabled": "#D7D0CB",
+        "error": "#832400",
+        "gray": "#5B6078",
+        "neutral": "#CBC1BB",
+        "primary": "#3951C5",
+        "secondary": "#F0A78B",
+        "success": "#3951C5",
+        "textBody": "#202641",
+        "textSub": "#5B6078",
+        "white": "#fff",
+      },
+      "components": Object {
+        "buttons": Object {
+          "normal": Object {
+            "height": "2.75rem",
+          },
+          "tiny": Object {
+            "height": "1.5rem",
+          },
+        },
+      },
+      "font": Object {
+        "family": "'Work Sans', sans-serif;",
+        "size": Object {
+          "body": "1rem",
+          "h1": "2rem",
+          "h2": "1.5rem",
+          "hint": "0.8125rem",
+          "tiny": "0.6875rem",
+        },
+      },
+      "spaces": Object {
+        "half": "0.25rem",
+        "one": "0.5rem",
+        "three": "2rem",
+        "two": "1rem",
+      },
+    }
+  }
+  type="text"
+>
+  <select />
+  <span
+    className="arrow"
+  />
+</styled.div>
+`;
+
+exports[`Select should render disaled 1`] = `
+<styled.div
+  disabled={true}
+  error={false}
+  theme={
+    Object {
+      "animation": Object {
+        "speed": "100ms",
+      },
+      "base": Object {
+        "radius": Object {
+          "normal": "0.5rem",
+          "tiny": "0.25rem",
+        },
+      },
+      "colors": Object {
+        "background": "#FDFCF9",
+        "black": "#202641",
+        "disabled": "#D7D0CB",
+        "error": "#832400",
+        "gray": "#5B6078",
+        "neutral": "#CBC1BB",
+        "primary": "#3951C5",
+        "secondary": "#F0A78B",
+        "success": "#3951C5",
+        "textBody": "#202641",
+        "textSub": "#5B6078",
+        "white": "#fff",
+      },
+      "components": Object {
+        "buttons": Object {
+          "normal": Object {
+            "height": "2.75rem",
+          },
+          "tiny": Object {
+            "height": "1.5rem",
+          },
+        },
+      },
+      "font": Object {
+        "family": "'Work Sans', sans-serif;",
+        "size": Object {
+          "body": "1rem",
+          "h1": "2rem",
+          "h2": "1.5rem",
+          "hint": "0.8125rem",
+          "tiny": "0.6875rem",
+        },
+      },
+      "spaces": Object {
+        "half": "0.25rem",
+        "one": "0.5rem",
+        "three": "2rem",
+        "two": "1rem",
+      },
+    }
+  }
+  type="text"
+>
+  <select
+    disabled={true}
+  />
+  <span
+    className="arrow"
+  />
+</styled.div>
+`;
+
+exports[`Select should render error 1`] = `
+<styled.div
+  error={true}
+  theme={
+    Object {
+      "animation": Object {
+        "speed": "100ms",
+      },
+      "base": Object {
+        "radius": Object {
+          "normal": "0.5rem",
+          "tiny": "0.25rem",
+        },
+      },
+      "colors": Object {
+        "background": "#FDFCF9",
+        "black": "#202641",
+        "disabled": "#D7D0CB",
+        "error": "#832400",
+        "gray": "#5B6078",
+        "neutral": "#CBC1BB",
+        "primary": "#3951C5",
+        "secondary": "#F0A78B",
+        "success": "#3951C5",
+        "textBody": "#202641",
+        "textSub": "#5B6078",
+        "white": "#fff",
+      },
+      "components": Object {
+        "buttons": Object {
+          "normal": Object {
+            "height": "2.75rem",
+          },
+          "tiny": Object {
+            "height": "1.5rem",
+          },
+        },
+      },
+      "font": Object {
+        "family": "'Work Sans', sans-serif;",
+        "size": Object {
+          "body": "1rem",
+          "h1": "2rem",
+          "h2": "1.5rem",
+          "hint": "0.8125rem",
+          "tiny": "0.6875rem",
+        },
+      },
+      "spaces": Object {
+        "half": "0.25rem",
+        "one": "0.5rem",
+        "three": "2rem",
+        "two": "1rem",
+      },
+    }
+  }
+  type="text"
+>
+  <select
+    error={true}
+  />
+  <span
+    className="arrow"
+  />
+</styled.div>
+`;
