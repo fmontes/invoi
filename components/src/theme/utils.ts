@@ -4,8 +4,8 @@ export const rgba = (color: string, opacity: string): string => {
     return `rgba(${hexToRgbA(color)}, ${opacity})`;
 };
 
-export const transition = (theme: ThemeModel, props: string[]): string =>
-    props.map((props: string) => `${props} ${theme.animation.speed} ease`).join(', ');
+export const transition = (theme: ThemeModel, props: string[], ease = 'ease'): string =>
+    props.map((prop: string) => `${prop} ${theme.animation.speed} ${ease}`).join(', ');
 
 export const hexToRgbA = (hex: string) => {
     let c: any;
