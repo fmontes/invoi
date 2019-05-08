@@ -24,6 +24,7 @@ const ButtonStyled = styled.button<ButtonProps>`
         theme.components.buttons[tiny ? 'tiny' : 'normal'].height};
     padding: 0 ${({ theme, tiny }: ButtonProps) => theme.spaces[tiny ? 'one' : 'two']};
     text-transform: ${({ tiny }: ButtonProps) => (tiny ? 'uppercase' : 'normal')};
+
     &:disabled {
         background-color: ${({ theme }: ButtonProps) => theme.colors.disabled};
     }
