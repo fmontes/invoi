@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should render 1`] = `
+<styled.ul
+  options={
+    Array [
+      Object {
+        "label": "Option One",
+        "onClick": [Function],
+      },
+      Object {
+        "disabled": true,
+        "label": "Option Two",
+        "onClick": [Function],
+      },
+      Object {
+        "label": "Option Three",
+        "onClick": [Function],
+      },
+    ]
+  }
+  theme={Object {}}
+>
+  <MenuOption
+    key="0"
+    label="Option One"
+    onClick={[Function]}
+  />
+  <MenuOption
+    disabled={true}
+    key="1"
+    label="Option Two"
+    onClick={[Function]}
+  />
+  <MenuOption
+    key="2"
+    label="Option Three"
+    onClick={[Function]}
+  />
+</styled.ul>
+`;

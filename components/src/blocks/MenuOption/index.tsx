@@ -3,11 +3,16 @@ import styled from 'styled-components';
 import theme, { ThemeModel } from '../../theme/index';
 import { transition, rgba } from '../../theme/utils';
 
-type MenuOptionProps = {
-    children: React.ReactNode;
+export interface MenuOptionsModel {
+    label: string;
+    onClick: (e: MouseEvent) => void;
+    disabled?: boolean;
+}
+
+interface MenuOptionProps extends MenuOptionsModel {
     disabled?: boolean;
     theme: ThemeModel;
-};
+}
 
 const MenuOptionStyled = styled.a<MenuOptionProps>`
     align-items: center;
@@ -27,7 +32,7 @@ const MenuOptionStyled = styled.a<MenuOptionProps>`
         transition(theme, ['transform', 'background-color'])};
 
     &:hover {
-        background-color: ${({ theme }: MenuOptionProps) => rgba(theme.colors.gray, '0.06')};
+        background-color: ${({ theme }: MenuOptionProps) => rgba(theme.colors.primary, '0.06')};
     }
 `;
 
@@ -36,5 +41,5 @@ MenuOptionStyled.defaultProps = {
 };
 
 export function MenuOption(props: MenuOptionProps): JSX.Element {
-    return <MenuOptionStyled {...props}>{props.children}</MenuOptionStyled>;
+    return <MenuOptionStyled {...props}>{props.label}</MenuOptionStyled>;
 }
