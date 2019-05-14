@@ -6,7 +6,8 @@
     "license": "MIT",
     "scripts": {
         "storybook": "start-storybook",
-        "test": "jest"
+        "test": "jest",
+        "deploy-storybook": "storybook-to-ghpages"
     },
     "dependencies": {
         "@material-ui/core": "^4.0.0-beta.1",
@@ -16,6 +17,7 @@
     },
     "devDependencies": {
         "@storybook/react": "^5.0.11",
+        "@storybook/storybook-deployer": "^2.8.1",
         "@types/enzyme": "^3.9.1",
         "@types/enzyme-adapter-react-16": "^1.0.5",
         "@types/jest": "^24.0.11",
